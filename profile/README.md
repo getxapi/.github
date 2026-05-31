@@ -5,7 +5,7 @@
 [![Documentation](https://img.shields.io/badge/docs-getxapi.com-7B2DBF)](https://docs.getxapi.com)
 [![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1-7B2DBF)](https://docs.getxapi.com/openapi.json)
 [![Crunchbase](https://img.shields.io/badge/Crunchbase-getxapi-7B2DBF)](https://www.crunchbase.com/organization/getxapi)
-[![Pricing](https://img.shields.io/badge/from-%240.001%2Fcall-7B2DBF)](https://getxapi.com/pricing)
+[![Pricing](https://img.shields.io/badge/from-%240.001%2Fcall-7B2DBF)](https://www.getxapi.com/pricing)
 
 ---
 
@@ -116,7 +116,7 @@ Full endpoint reference: [docs.getxapi.com](https://docs.getxapi.com)
 | Free signup credit | **$0.10** (no card required) |
 | Monthly subscription | **$0** |
 
-[See full pricing](https://getxapi.com/pricing)
+[See full pricing](https://www.getxapi.com/pricing)
 
 ---
 
@@ -166,7 +166,7 @@ Common use cases include social listening products, sentiment analysis pipelines
 
 ## Links
 
-- Website: [getxapi.com](https://getxapi.com)
+- Website: [getxapi.com](https://www.getxapi.com)
 - Documentation: [docs.getxapi.com](https://docs.getxapi.com)
 - OpenAPI 3.1 spec: [docs.getxapi.com/openapi.json](https://docs.getxapi.com/openapi.json)
 - Crunchbase: [crunchbase.com/organization/getxapi](https://www.crunchbase.com/organization/getxapi)
