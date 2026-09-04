@@ -182,7 +182,7 @@ Common use cases include social listening products, sentiment analysis pipelines
 
 ## Repositories
 
-- [twitter-api-alternatives](https://github.com/getxapi/twitter-api-alternatives): every hosted and open-source alternative to the official X API in one table, price normalised to cost per 1,000 tweets, sources dated
+- [twitter-api-alternatives](https://github.com/getxapi/twitter-api-alternatives): the Twitter API alternative guide, with coverage, pricing at volume, migration from X API v2 and client examples
 - [getxapi-mcp](https://github.com/getxapi/getxapi-mcp): MCP server that puts the whole API inside Claude, Cursor and other MCP clients
 - [getxapi-examples](https://github.com/getxapi/getxapi-examples): runnable examples in curl, Python, Node.js, Go and Rust
 
