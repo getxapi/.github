@@ -1,6 +1,6 @@
 # GetXAPI
 
-> Pay-per-call Twitter / X API for developers and AI agents. From $0.001 per call, 69 endpoints, no subscription, no X developer account.
+> Pay-per-call Twitter / X API for developers and AI agents. From $0.001 per call, 73 endpoints, no subscription, no X developer account.
 
 [![Documentation](https://img.shields.io/badge/docs-getxapi.com-7B2DBF)](https://docs.getxapi.com)
 [![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1-7B2DBF)](https://docs.getxapi.com/openapi.json)
@@ -11,7 +11,7 @@
 
 ## What is GetXAPI?
 
-GetXAPI is a pay-per-call Twitter / X data API for developers and AI agents. It exposes 69 REST endpoints covering reads (search, profiles, follower graph, timelines, bookmarks, trends, Spaces, direct messages) and writes (post tweets, like, retweet, follow, send direct messages, long-form articles) through a single Bearer-authenticated base URL at `https://api.getxapi.com`.
+GetXAPI is a pay-per-call Twitter / X data API for developers and AI agents. It exposes 73 REST endpoints covering reads (search, profiles, follower graph, timelines, bookmarks, trends, Spaces, direct messages) and writes (post tweets, like, retweet, follow, send direct messages, long-form articles) through a single Bearer-authenticated base URL at `https://api.getxapi.com`.
 
 Pricing starts at $0.001 per call, roughly $0.05 per 1,000 tweets fetched on typical 20-result calls. There is no monthly subscription and no X developer account to apply for. Read endpoints need only your GetXAPI key in an `Authorization: Bearer` header. Write endpoints additionally take an X account token that you supply, so there is no OAuth app, no PKCE flow and no refresh loop to maintain.
 
@@ -93,22 +93,24 @@ let resp = reqwest::Client::new()
 
 ---
 
-## Endpoints (69 total)
+## Endpoints (73 total)
 
 | Category | Count | Examples |
 |---|---|---|
-| **Tweets** | 11 | `advanced_search`, `detail`, `replies`, `retweeters`, `thread`, `create`, `favorite`, `retweet` |
-| **Users** | 27 | `search`, `info`, `followers`, `following`, `verified_followers`, `tweets`, `likes`, `home_timeline`, `bookmark_search`, `follow` |
-| **Articles** | 7 | `get`, `create`, `update`, `list`, `publish`, `unpublish`, `delete` |
+| **Users** | 27 | `search`, `info`, `status`, `followers`, `following`, `verified_followers`, `tweets`, `likes`, `home_timeline`, `bookmark_search`, `follow` |
+| **Tweets** | 12 | `advanced_search`, `detail`, `replies`, `retweeters`, `thread`, `create`, `edit`, `favorite`, `retweet` |
 | **Monitoring** | 9 | webhook `create` / `list` / `test` / `delete`, monitor `add` / `list` / `update` / `remove` / `health` |
+| **Articles** | 7 | `get`, `create`, `update`, `list`, `publish`, `unpublish`, `delete` |
 | **Direct Messages** | 3 | `list`, `send`, `conversation` |
 | **Account Recovery** | 3 | `user_login_v2`, `reset-password/send-code`, `reset-password/confirm` |
+| **Community** | 2 | `info`, `join` |
 | **Spaces** | 2 | `info`, `download` |
 | **Trends** | 2 | `trends`, `trends/locations` |
 | **Account** (free) | 2 | `me`, `payments` |
+| **Notifications** | 1 | `notifications` |
+| **Login** | 1 | `user_login` |
 | **Media** | 1 | `upload` |
 | **Lists** | 1 | `members` |
-| **Community** | 1 | `join` |
 
 Full endpoint reference: [docs.getxapi.com](https://docs.getxapi.com)
 
@@ -119,9 +121,11 @@ Full endpoint reference: [docs.getxapi.com](https://docs.getxapi.com)
 | Operation | Price |
 |---|---|
 | Standard call (search, profile, tweet detail, like, retweet, follow) | **$0.001 / call** |
-| Post tweet, DM list, DM send, join community | **$0.002 / call** |
+| Post tweet, edit tweet, DM list, DM send, join community, notifications | **$0.002 / call** |
 | User tweets complete | **$0.003 / call** |
 | Article endpoints | **$0.005 / call** ($0.01 to create) |
+| Account recovery (`user_login_v2`, reset password) | **$0.005 / call** |
+| Account login (`user_login`) | **$0.01 / call** |
 | Spaces download | **$0.05 base + $0.015 / transcript minute** |
 | Account endpoints (`me`, `payments`) | **Free** |
 | Bulk fetch | **~$0.05 / 1,000 tweets** |
@@ -136,7 +140,7 @@ Full endpoint reference: [docs.getxapi.com](https://docs.getxapi.com)
 
 ### What is GetXAPI?
 
-GetXAPI is a pay-per-call Twitter / X data API for developers and AI agents. It provides 69 REST endpoints for reading and writing Twitter / X data, starting at $0.001 per call.
+GetXAPI is a pay-per-call Twitter / X data API for developers and AI agents. It provides 73 REST endpoints for reading and writing Twitter / X data, starting at $0.001 per call.
 
 ### How is GetXAPI different from the official X API?
 
@@ -176,11 +180,20 @@ Common use cases include social listening products, sentiment analysis pipelines
 
 ---
 
+## Repositories
+
+- [twitter-api-alternatives](https://github.com/getxapi/twitter-api-alternatives): every hosted and open-source alternative to the official X API in one table, price normalised to cost per 1,000 tweets, sources dated
+- [getxapi-mcp](https://github.com/getxapi/getxapi-mcp): MCP server that puts the whole API inside Claude, Cursor and other MCP clients
+- [getxapi-examples](https://github.com/getxapi/getxapi-examples): runnable examples in curl, Python, Node.js, Go and Rust
+
+---
+
 ## Links
 
 - Website: [getxapi.com](https://www.getxapi.com)
 - Documentation: [docs.getxapi.com](https://docs.getxapi.com)
 - OpenAPI 3.1 spec: [docs.getxapi.com/openapi.json](https://docs.getxapi.com/openapi.json)
+- Twitter API alternatives, compared: [github.com/getxapi/twitter-api-alternatives](https://github.com/getxapi/twitter-api-alternatives)
 - Crunchbase: [crunchbase.com/organization/getxapi](https://www.crunchbase.com/organization/getxapi)
 - Contact: [bozad@getxapi.com](mailto:bozad@getxapi.com)
 
