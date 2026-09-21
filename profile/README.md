@@ -2,6 +2,11 @@
 
 > Pay-per-call Twitter / X API for developers and AI agents. From $0.001 per call, 73 endpoints, no subscription, no X developer account.
 
+### [Get your API key at getxapi.com →](https://www.getxapi.com/signup?utm_source=github&utm_medium=org_readme)
+
+**$0.10 free credit at signup, no card, no X developer account.** Website: [www.getxapi.com](https://www.getxapi.com/?utm_source=github&utm_medium=org_readme) · [Docs](https://docs.getxapi.com) · [Pricing](https://www.getxapi.com/pricing)
+
+[![Get API key](https://img.shields.io/badge/Get%20API%20key-getxapi.com-22C55E)](https://www.getxapi.com/signup?utm_source=github&utm_medium=org_readme)
 [![Documentation](https://img.shields.io/badge/docs-getxapi.com-7B2DBF)](https://docs.getxapi.com)
 [![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1-7B2DBF)](https://docs.getxapi.com/openapi.json)
 [![Crunchbase](https://img.shields.io/badge/Crunchbase-getxapi-7B2DBF)](https://www.crunchbase.com/organization/getxapi)
@@ -15,7 +20,7 @@ GetXAPI is a pay-per-call Twitter / X data API for developers and AI agents. It 
 
 Pricing starts at $0.001 per call, roughly $0.05 per 1,000 tweets fetched on typical 20-result calls. There is no monthly subscription and no X developer account to apply for. Read endpoints need only your GetXAPI key in an `Authorization: Bearer` header. Write endpoints additionally take an X account token that you supply, so there is no OAuth app, no PKCE flow and no refresh loop to maintain.
 
-**Founded:** 2026 · **HQ:** Dubai, United Arab Emirates · **OpenAPI 3.1 spec:** [docs.getxapi.com/openapi.json](https://docs.getxapi.com/openapi.json)
+**Founded:** 2026 · **Team:** Remote · **Website:** [www.getxapi.com](https://www.getxapi.com) · **OpenAPI 3.1 spec:** [docs.getxapi.com/openapi.json](https://docs.getxapi.com/openapi.json)
 
 ---
 
@@ -172,7 +177,7 @@ Every signup gets $0.10 in free credit, no credit card required. The two account
 
 ### Who is behind GetXAPI?
 
-GetXAPI was founded in 2026 by Bozad and is headquartered in Dubai, United Arab Emirates. Contact at bozad@getxapi.com.
+GetXAPI was founded in 2026 by Bozad. The team works remotely. Contact at bozad@getxapi.com, or start at [getxapi.com/signup](https://www.getxapi.com/signup?utm_source=github&utm_medium=org_readme).
 
 ### What can I build with GetXAPI?
 
